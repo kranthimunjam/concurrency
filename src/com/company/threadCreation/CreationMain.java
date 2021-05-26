@@ -1,4 +1,4 @@
-package com.company.ThreadCreation;
+package com.company.threadCreation;
 
 public class CreationMain {
         public static void main(String[] args) throws InterruptedException {

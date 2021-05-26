@@ -1,4 +1,4 @@
-package com.company.ThreadCreation;
+package com.company.threadCreation;
 
 public class ExtendedImpl extends Thread{
     public void run(){
