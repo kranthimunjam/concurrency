@@ -1,4 +1,4 @@
-package com.company.locking;
+package com.company.synchronizedProducerConsumer;
 
 class Queue {
     int n=0;

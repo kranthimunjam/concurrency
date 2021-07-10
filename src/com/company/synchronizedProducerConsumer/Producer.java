@@ -1,4 +1,4 @@
-package com.company.locking;
+package com.company.synchronizedProducerConsumer;
 
 class Producer implements Runnable {
     SynchronizedQueue q;
