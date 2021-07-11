@@ -21,6 +21,7 @@ public class MyThread implements Runnable{
                  Using latch for a single thread can be confusing.
                  This logic can be used in circuit breakers where each time thread times out, latch count is reduced.
                  Once the latch count is 0 then circuit is open and fall back logic is executed.
+                 But more appropriate mechanism for this use case is CyclicBarrier.
                  */
                 countDownLatch.countDown();
                 Thread.sleep(10);
