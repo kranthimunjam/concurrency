@@ -8,8 +8,15 @@ public class SimpleExecutor {
 
     public static void main(String args[]){
         long start = System.currentTimeMillis();
-        //Create an executor with thread pool size 2 (meaning two threads will be available in the pool)
+        /*
+        Create an executor with thread pool size 2 (meaning two threads will be available in the pool)
+        Three types of executor services:
+         1. FixedThreadPool : creates a thread pool that consists of a specified number of threads.
+         2. ScheduledThreadPool :  creates a thread pool that supports thread scheduling.
+         3. CachedThreadPool : creates a thread pool that adds threads as needed but reuses threads if possible.
+         */
         ExecutorService executorService = Executors.newFixedThreadPool(2);
+
 
         CountDownLatch cd1 = new CountDownLatch(5);
         CountDownLatch cd2 = new CountDownLatch(5);
