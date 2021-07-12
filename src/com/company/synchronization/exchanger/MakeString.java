@@ -15,11 +15,10 @@ public class MakeString implements Runnable{
     public void run() {
         char ch = 'A';
         for(int i=0;i<3;i++){
-            generated = "";
             for(int j=0;j<5;j++)    generated += ch++;
             try {
                 System.out.println("Generated string "+generated+" waiting to be exchanged...");
-                exchanger.exchange(generated);
+                generated = exchanger.exchange(generated);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

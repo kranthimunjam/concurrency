@@ -16,7 +16,7 @@ public class UseString implements Runnable{
         for(int i=0; i < 3; i++) {
             try {
                 // Exchange an empty buffer for a full one.
-                str = exchanger.exchange(new String());
+                str = exchanger.exchange("");
                 System.out.println("Got: " + str);
             } catch(InterruptedException exc) {
                 System.out.println(exc);
